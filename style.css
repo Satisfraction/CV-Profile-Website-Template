@@ -1,0 +1,166 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  body.dark-mode {
+    background-color: #111;
+    color: #fff;
+  }
+  
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+  
+  nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+  }
+  
+  section {
+    padding: 2rem;
+  }
+  
+  section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #work-and-testimonials {
+    display: flex;
+  }
+  
+  #work {
+    flex: 1;
+    padding-right: 1rem;
+  }
+  
+  #testimonials {
+    flex: 1;
+    padding-left: 1rem;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .no-list-style {
+    list-style: none;
+  }
+
+/* Additional styles for the dark mode switch label */
+.dark-mode-switch-label {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    background-color: #555;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the dark mode switch button */
+.dark-mode-switch-label:hover {
+    background-color: #4d3f3f;
+}
+
+/* Style the checkbox */
+#dark-mode-switch {
+    display: none;
+}
+
+/* Style the switch track */
+#dark-mode-switch + .dark-mode-switch-label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+/* Style the switch thumb */
+#dark-mode-switch:checked + .dark-mode-switch-label::before {
+    background-color: #333;
+}
+
+/* Style the thumb indicator */
+#dark-mode-switch + .dark-mode-switch-label::after {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+/* Style the thumb indicator when switch is checked */
+#dark-mode-switch:checked + .dark-mode-switch-label::after {
+    left: calc(100% - 18px);
+}
+
+/* Adjust the label's text position */
+#dark-mode-switch + .dark-mode-switch-label {
+    padding-right: 28px;
+}
+
+/* Style the dark mode switch text inside the button */
+.dark-mode-switch-text {
+    margin-right: 5px;
+}
+
+/* Additional styles for the dark mode switch label ends here */
+
+  /* Add your additional CSS styles here */
