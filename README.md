@@ -48,7 +48,7 @@ To use this template, you have three options:
 - Alternatively, you can clone this repository to your local machine using Git.
 - Open your terminal or command prompt and run the following command:
     ```git
-    git clone 
+    git clone https://github.com/Satisfraction/CV-Profile-Website-Template.git 
     ```
 - Customize the content in the `index.html` file with your own information and projects.
 - Optionally, modify the `style.css` file to change the appearance of the website.
